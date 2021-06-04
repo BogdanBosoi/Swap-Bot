@@ -3,9 +3,8 @@ require 'uri'
 require 'net/http'
 require 'json'
 require 'rubygems'
-require 'nokogiri'
 
-token = '1730366621:AAEqaXg2KkpePUK3esX_T47Dam6ZZHDGckU'
+token = '1795392938:AAEXABnlkXMD6L2prz2EqifzMpl1vwWf_hU'
 
 bot = TelegramBot.new(token: token)
 def string_to_float(string, base = 10)
