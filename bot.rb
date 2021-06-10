@@ -19,7 +19,7 @@ bot.get_updates(fail_silently: true) do |message|
     when /chart/i
       reply.text = "You can find the chart here: https://dex.guru/token/0x4b4c5d87fa1afe3365fa1ee9cb6c38cc6fab8fef-bsc"
     when /price/i
-	  uri = URI('https://api.dex.guru/v1/tokens/0x4B4c5D87fa1aFE3365Fa1ee9cb6c38cC6FAB8fEf-bsc')
+	  uri = URI('https://api.dex.guru/v1/tokens/0x4b4c5d87fa1afe3365fa1ee9cb6c38cc6fab8fef-bsc')
 	  res = Net::HTTP.get_response(uri)
 	  parsed = JSON.parse(res.body)
 	  reply.text = parsed["priceUSD"].round(5)
