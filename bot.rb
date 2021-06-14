@@ -4,7 +4,7 @@ require 'net/http'
 require 'json'
 require 'rubygems'
 
-token = '1795392938:AAERlQK_ikCHyLEvpaz9re6iLpmJ1TMtMp8'
+token = '1795392938:AAGLcJr3AYepa9KkCZYabqGInWO3BeVnDJM'
 
 bot = TelegramBot.new(token: token)
 def string_to_float(string, base = 10)
